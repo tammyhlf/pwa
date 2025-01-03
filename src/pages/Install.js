@@ -37,6 +37,7 @@ export default function Install() {
         clearInterval(interval)
         setInstalling(false)
         console.log('PWA installed successfully')
+        window.location.reload() // 打开已安装的PWA应用
       }
     }, 500)
   }
@@ -56,6 +57,7 @@ export default function Install() {
       console.log('PWA was installed')
       setInstalling(false)
       setProgress(100)
+      window.location.reload() // 打开已安装的PWA应用
     }
 
     window.addEventListener('beforeinstallprompt', onBeforeInstallPrompt)
