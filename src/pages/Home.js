@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../logo.svg'
 import '../App.css'
 import { Link } from 'react-router-dom'
+import Install from './Install'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
         <Link className="App-link" to={'about'}>
           About
         </Link>
+        <Install />
       </header>
     </div>
   )
