@@ -11,8 +11,8 @@
     "web-vitals": "^4.2.4"
   },
   "scripts": {
-    "start": "rsbuild dev",
-    "build": "rsbuild build"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -32,8 +32,7 @@
     ]
   },
   "devDependencies": {
-    "@rsbuild/core": "^1.1.13",
-    "@rsbuild/plugin-react": "^1.1.0"
+    "react-scripts": "^5.0.1"
   },
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
