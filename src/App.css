@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,5 +34,41 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.install-btn {
+  background: #6A35FF;
+  border-radius: 0.4em;
+  color: white;
+  padding: 0.5em 1em;
+  font-size: 1.6rem;
+  animation: fade-in 600ms ease-in-out;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+}
+
+.tab-active {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+.img-content {
+  img {
+    width: 100vw;
+    height: 100vh;
   }
 }

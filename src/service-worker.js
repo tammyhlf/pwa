@@ -60,6 +60,21 @@ registerRoute(
     ],
   })
 );
+registerRoute(
+  ({ url }) => url.href === 'https://static.chuanyinet.com/images/home39a8182b-cccf-4d.png',
+  // 使用 StaleWhileRevalidate 时，资源会在后台更新缓存，但依赖缓存的先前资源会被优先展示，直到后台更新完成并替换旧的缓存图片
+  new StaleWhileRevalidate({
+    cacheName: 'specific-image-cache',
+    plugins: [
+      // 限制缓存的最大条目数
+      new ExpirationPlugin({
+        maxEntries: 1, // 最大缓存条目数，这里是 1，保持缓存中只有一个用户信息
+        maxAgeSeconds: 60 * 60 * 24, // 缓存过期时间，1 天
+      }),
+    ],
+  })
+);
+
 
 // This allows the web app to trigger skipWaiting via
 // registration.waiting.postMessage({type: 'SKIP_WAITING'})

@@ -1,25 +1,66 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Palmpay PWA",
+  "name": "Palmpay PWA",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
+      "src": "icon-mini.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "icon-large.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "description": "say yes to more",
+  "lang": "en",
+  "categories": [
+    "finance",
+    "business",
+    "banking"
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot1-narrow.jpg",
+      "type": "image/jpg",
+      "sizes": "606x1279",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshot2-narrow.jpg",
+      "type": "image/jpg",
+      "sizes": "606x1279",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshot3-narrow.jpg",
+      "type": "image/jpg",
+      "sizes": "606x1279",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshot1-narrow.jpg",
+      "type": "image/jpg",
+      "sizes": "606x1279",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshot2-narrow.jpg",
+      "type": "image/jpg",
+      "sizes": "606x1279",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshot3-narrow.jpg",
+      "type": "image/jpg",
+      "sizes": "606x1279",
+      "form_factor": "wide"
+    }
+  ],
+  "id": "https://localhost:3000/",
+  "start_url": "#/about",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#ffffff",
+  "background_color": "#6A35FF"
 }
