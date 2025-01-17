@@ -1,0 +1,66 @@
+{
+  "short_name": "Palmpay PWA",
+  "name": "Palmpay PWA",
+  "icons": [
+    {
+      "src": "icon-mini.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-large.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "description": "say yes to more",
+  "lang": "en",
+  "categories": [
+    "finance",
+    "business",
+    "banking"
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot1-narrow.jpg",
+      "type": "image/jpg",
+      "sizes": "606x1279",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshot2-narrow.jpg",
+      "type": "image/jpg",
+      "sizes": "606x1279",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshot3-narrow.jpg",
+      "type": "image/jpg",
+      "sizes": "606x1279",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshot1-narrow.jpg",
+      "type": "image/jpg",
+      "sizes": "606x1279",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshot2-narrow.jpg",
+      "type": "image/jpg",
+      "sizes": "606x1279",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshot3-narrow.jpg",
+      "type": "image/jpg",
+      "sizes": "606x1279",
+      "form_factor": "wide"
+    }
+  ],
+  "id": "https://localhost:3000/",
+  "start_url": "#/about",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#6A35FF"
+}
