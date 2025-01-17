@@ -3,6 +3,7 @@ import './App.css'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
+import Skeleions from './pages/skeleions'
 
 const router = createHashRouter([
   {
@@ -12,6 +13,10 @@ const router = createHashRouter([
   {
     path: 'about',
     element: <About />,
+  },
+  {
+    path: 'skeleions',
+    element: <Skeleions />,
   },
 ])
 
