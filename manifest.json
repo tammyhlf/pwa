@@ -58,8 +58,7 @@
       "form_factor": "wide"
     }
   ],
-  "id": "https://localhost:3000/",
-  "start_url": "#/about",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#6A35FF"
