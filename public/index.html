@@ -22,10 +22,94 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Palmpay PWA</title>
+    <style>
+        #skeleton {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 999;
+            background: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .skeleton-header {
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        .skeleton-shop-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .skeleton-shop-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #fff;
+            border-radius: 8px;
+        }
+        
+        .skeleton-shop-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+            border-radius: 4px;
+            margin-right: 15px;
+        }
+        
+        .skeleton-shop-content {
+            flex: 1;
+        }
+        
+        .skeleton-shop-title {
+            width: 70%;
+            height: 20px;
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+            margin-bottom: 8px;
+            border-radius: 4px;
+        }
+        
+        .skeleton-shop-subtitle {
+            width: 40%;
+            height: 16px;
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+            border-radius: 4px;
+        }
+        
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+        
+        #root:not(:empty) + #skeleton {
+            display: none;
+        }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div id="skeleton">
+        <div class="skeleton-header"></div>
+        <div class="skeleton-shop-list" id="skeletonList"></div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -37,4 +121,17 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    const skeletonList = document.getElementById('skeletonList');
+    const itemTemplate = `
+        <div class="skeleton-shop-item">
+            <div class="skeleton-shop-icon"></div>
+            <div class="skeleton-shop-content">
+                <div class="skeleton-shop-title"></div>
+                <div class="skeleton-shop-subtitle"></div>
+            </div>
+        </div>
+    `;
+    skeletonList.innerHTML = Array(6).fill(itemTemplate).join('');
+</script>
 </html>
