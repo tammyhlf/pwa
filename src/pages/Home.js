@@ -5,7 +5,7 @@ import Install from './Install1'
 import largeIcon from '../icon-large.png'
 
 function Home() {
-  const SHOP_LIST_LEN = 5000;
+  const SHOP_LIST_LEN = 2000;
   const SHOP_LIST_ITEM = {
     name: 'This is a title',
     imgsrc: largeIcon
@@ -18,8 +18,8 @@ function Home() {
         <li key={i}>
           <img className="shop-icon" src={SHOP_LIST_ITEM.imgsrc} alt="icon" />
           <h3>
-            {SHOP_LIST_ITEM.name}<br />
-            <span>No.{SHOP_LIST_LEN - i}</span>
+            {SHOP_LIST_ITEM.name}
+            <p>No.{SHOP_LIST_LEN - i}</p>
           </h3>
         </li>
       );

@@ -76,7 +76,7 @@
 .shop-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 12px 0;
 }
 
 .shop-list li {
@@ -93,10 +93,14 @@
 }
 
 .shop-list h3 {
+  font-size: 16px;
+  color: #222;
   margin: 0;
 }
 
-.shop-list span {
-  font-size: 0.8em;
+.shop-list p {
+  font-size: 12px;
   color: #666;
+  padding: 0;
+  margin-left: -32px;
 }
