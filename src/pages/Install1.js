@@ -24,7 +24,7 @@ export default function Install() {
         autoClose: 2000,
         position: "bottom-center",
       });
-    }, 800);
+    }, 1100);
   };
 
   const onInstallClick = async (event) => {
