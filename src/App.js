@@ -21,14 +21,6 @@ const router = createHashRouter([
 ])
 
 function App() {
-  useEffect(() => {
-    const root = document.getElementById('root');
-    root.style.visibility = 'hidden';
-    setTimeout(() => {
-      root.style.visibility = 'visible';
-    }, 0);
-  }, []);
-
   return <RouterProvider router={router} />
 }
 

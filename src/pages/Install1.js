@@ -18,11 +18,13 @@ export default function Install() {
     setBeforeInstallEvent(null);
     if (document.hidden) return;
     installingViaButtonRef.current = false;
-    toast.success('安装已完成，请返回手机屏幕查看应用。', {
-      hideProgressBar: true,
-      autoClose: 2000,
-      position: "bottom-center",
-    });
+    setTimeout(() => {
+      toast.success('安装已完成，请返回手机屏幕查看应用。', {
+        hideProgressBar: true,
+        autoClose: 2000,
+        position: "bottom-center",
+      });
+    }, 0);
   };
 
   const onInstallClick = async (event) => {
